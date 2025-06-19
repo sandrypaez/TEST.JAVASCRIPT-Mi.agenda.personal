@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi-agenda-personal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <input type="password" placeholder="Tu clave secreta (6 dígitos)" class="w-full p-3 rounded-lg text-white">
+    </div>
+    <button type="submit" class="w-full bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-3 rounded-lg transition-colors">Entrar</button>
+    <div class="text-center text-sm space-y-2 pt-2">
+        <a href="#" class="text-cyan-300 hover:underline" data-auth-view="reset">¿Olvidaste tu clave?</a>
+        <p class="text-gray-400">¿Aún no tienes cuenta? <a href="#" class="font-bold text-cyan-300 hover:underline" data-auth-view="register">Crear cuenta</a></p>
+    </div>
+</form>
+
+<form id="register-form" class="space-y-4 hidden">
+    <input type="text" placeholder="Nombre completo" class="w-full p-3 rounded-lg text-white">
+    <input type="email" placeholder="Correo electrónico" class="w-full p-3 rounded-lg text-white">
+    <input type="password" placeholder="Crea tu clave de 6 dígitos" class="w-full p-3 rounded-lg text-white" maxlength="6">
+    <button type="submit" class="w-full bg-purple-600 hover:bg-purple-500 text-white font-bold py-3 rounded-lg transition-colors">Registrarme</button>
+    <div class="text-center text-sm">
+        <p class="text-gray-400">¿Ya tienes cuenta? <a href="#" class="font-bold text-cyan-300 hover:underline" data-auth-view="login">Inicia sesión</a></p>
+    </div>
+</form>
+<form id="reset-form" class="space-y-4 hidden">
+    <input type="email" placeholder="Tu correo electrónico" class="w-full p-3 rounded-lg text-white">
+    <button type="submit" class="w-full bg-gray-600 hover:bg-gray-500 text-white font-bold py-3 rounded-lg transition-colors">Enviar enlace</button>
+    <div class="text-center text-sm">
+        <p class="text-gray-400">¿Ya la recordaste? <a href="#" class="font-bold text-cyan-300 hover:underline" data-auth-view="login">Volver a inicio</a></p>
+    </div>
+</body>
+</html>
